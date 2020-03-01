@@ -1,0 +1,101 @@
+.news{
+  min-width: 320px;
+  max-width: 1216px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.news__title{
+  width: 100%;
+  margin: 80px 0 40px 0;
+  text-align: center;
+  font-size: 40px;
+  line-height: 40px;
+  font-family: $titleFont;
+}
+.news__card{
+  width: 290px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.16);
+  border-radius: 16px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.news__card-date, .news__card-vklink{
+  font-family: $mainFont;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.0002px;
+  color: #6A6A6A;
+}
+
+.news__card-date{
+  text-transform: uppercase;
+  margin: 32px 0 33px 33px ;
+}
+.news__card-vklink{
+  margin: 32px 32px 33px 0 ;
+  text-decoration: none;
+  padding: 0 0 0 20px;
+  position: relative;
+ &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    display: block;
+    width: 16px;
+    height: 10px;
+   background: url("../img/vkontakte.svg") no-repeat;
+  }
+}
+.news__card-title{
+  font-family: $mainFont;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 32px 32px 32px;
+}
+@include breakpoint(tablet){
+  .news{
+    flex-direction: row;
+    justify-content: center;
+  }
+  .news__card{
+    width: 384px;
+    margin: 0 0 40px 0;
+    &--first{
+    margin-right: 32px ;
+  }
+  }
+}
+@include breakpoint(desktop){
+  .news__title{
+    text-align: left;
+    padding-left: 20px;
+  }
+  .news__card{
+    margin-right: 10px;
+    &--last {
+      margin-right: 0;
+    }
+  }
+}
+@include breakpoint(widescreen){
+  .news__title{
+    padding-left: 0;
+  }
+  .news__card{
+    margin-right: 32px;
+    &--last {
+      margin-right: 0;
+    }
+  }
+}

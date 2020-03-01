@@ -1,0 +1,60 @@
+.disciplines__title{
+  margin: 80px 0 40px 0;
+  font-family: $titleFont;
+  font-size: 40px;
+  line-height: 40px;
+  width: 100%;
+  text-align: center;
+}
+.disciplines__items{
+  width: 290px;
+  margin: 0 auto;
+}
+.disciplines__item{
+  position: relative;
+  display: block;
+  border: 1px solid #EAEFFC;
+  border-radius: 8px;
+  padding: 24px 104px 24px 32px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  &::before{
+    content:'';
+    position: absolute;
+    top: 31px;
+    right: 32px;
+    display: block;
+    width: 16px;
+    height: 10px;
+    background: url("../img/arrow-chevron-down.svg") no-repeat;
+}
+  &--open {
+    &::before {
+      background: url("../img/arrow-chevron-up.svg") no-repeat;
+    }
+  }
+}
+.disciplines__item-title{
+  font-family: $mainFont;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.0016px;
+  user-select: none;
+}
+.disciplines__item-description{
+  margin-top: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.0016px;
+  user-select: none;
+  &--hide {
+    display: none;
+  }
+}
+
+@include breakpoint(tablet){
+  .disciplines__items{
+    width: 592px;
+  }
+}

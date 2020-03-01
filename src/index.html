@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <title>ITMO_test_task</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header class="header">
+    <div class="header__add-on">
+        <a class="header__logo" href="#">
+            <img class="header__logo-image" src="./assets/img/logo_ITMO.svg" alt="Barbershop" width="162" height="16">
+        </a>
+        <a class="header__lang" href="#">
+            <span class="header__text">En</span>
+            <img src="./assets/img/united-kingdom.svg" width="24" height="24" class="header__lang-image" alt="english">
+        </a>
+    </div>
+    <div class="header__nav">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+            <div class="main-nav__wrapper">
+                <a class="header__nav-logo" href="#">
+                    <img src="./assets/img/logo.svg" alt="logo" class="header__nav-image">
+                </a>
+                <button class="main-nav__toggle" type="button">открыть меню</button>
+            </div>
+            <ul class="main-nav__items">
+                <li class="main-nav__item"><a href="">О лаборатории</a></li>
+                <li class="main-nav__item"><a href="#">Учебная деятельность</a></li>
+                <li class="main-nav__item"><a href="#">Научная деятельность</a></li>
+                <li class="main-nav__item"><a href="#">Новости</a></li>
+                <li class="main-nav__item"><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="cover" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-caption text-left">
+            <h1 class="cover__heading">
+                Началась подача документов
+            </h1>
+            <p class="cover__lead">
+                Программа предполагает углубленное изучение вопросов, связанных с проектированием, исследованием,
+                производством и эксплуатацией мехатронных и робототехнических систем и комплексов.
+            </p>
+            <a href="#" class="button button-red">
+                Подробнее
+            </a>
+        </div>
+        <div class="carousel-item item active">
+            <img class="d-block img__obj_fit" src="./assets/img/banner.png" alt="First slide">
+        </div>
+        <div class="carousel-item item">
+            <img class="d-block img__obj_fit" src="./assets/img/banner.png" alt="Second slide">
+        </div>
+        <div class="carousel-item item">
+            <img class="d-block img__obj_fit" src="./assets/img/banner.png" alt="Third slide">
+        </div>
+    </div>
+    <a class="carousel-control-prev d-none d-sm-flex" href="#cover" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next d-none d-sm-flex" href="#cover" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    <ol class="carousel-indicators my-4 d-sm-none">
+        <li data-target="#cover" data-slide-to="0" class="active"></li>
+        <li data-target="#cover" data-slide-to="1"></li>
+        <li data-target="#cover" data-slide-to="2"></li>
+    </ol>
+</section>
+<section class="news">
+    <h2 class="news__title">Новости и события</h2>
+    <article class="news__card news__card--first">
+        <img class="news__card-img" src="./assets/img/foto_1.png" width="384" height="224" alt="">
+        <span class="news__card-date">2 декабря 2019</span>
+        <a class="news__card-vklink" href="#">Вконтакте</a>
+        <h3 class="news__card-title">Физарум//Перформер, 2019, Bioroboty019 это мультимедийный перформанс о связи
+            человеческого и нечеловеческого, представленный на Кураторском форуме в Молодёжный...</h3>
+    </article>
+    <article class="news__card">
+        <img class="news__card-img" src="./assets/img/foto_2.png" width="384" height="224" alt="">
+        <span class="news__card-date">2 декабря 2019</span>
+        <a class="news__card-vklink" href="#">Вконтакте</a>
+        <h3 class="news__card-title">Среди теоретических дисциплин особое место отводится «Теории вероятностей»,
+            «Дискретной математике», «Теории автоматического управления» и др.</h3>
+    </article>
+    <article class="news__card news__card--first news__card--last">
+        <img class="news__card-img" src="./assets/img/foto_3.png" width="384" height="224" alt="">
+        <span class="news__card-date">2 декабря 2019</span>
+        <a class="news__card-vklink" href="#">Вконтакте</a>
+        <h3 class="news__card-title">В специализации «Мехатроника» упор сделан на изучение дисциплин, посвященных
+            проектированию и конструированию различных мехатронных и робототехнических...</h3>
+    </article>
+    <article class="news__card">
+        <img class="news__card-img" src="./assets/img/foto_1.png" width="384" height="224" alt="">
+        <span class="news__card-date">2 декабря 2019</span>
+        <a class="news__card-vklink" href="#">Вконтакте</a>
+        <h3 class="news__card-title">Физарум//Перформер, 2019, Bioroboty019 это мультимедийный перформанс о связи
+            человеческого и нечеловеческого, представленный на Кураторском форуме в Молодёжный...</h3>
+    </article>
+    <article class="news__card news__card--first">
+        <img class="news__card-img" src="./assets/img/foto_2.png" width="384" height="224" alt="">
+        <span class="news__card-date">2 декабря 2019</span>
+        <a class="news__card-vklink" href="#">Вконтакте</a>
+        <h3 class="news__card-title">Среди теоретических дисциплин особое место отводится «Теории вероятностей»,
+            «Дискретной математике», «Теории автоматического управления» и др.</h3>
+    </article>
+    <article class="news__card news__card--last">
+        <img class="news__card-img" src="./assets/img/foto_3.png" width="384" height="224" alt="">
+        <span class="news__card-date">2 декабря 2019</span>
+        <a class="news__card-vklink" href="#">Вконтакте</a>
+        <h3 class="news__card-title">В специализации «Мехатроника» упор сделан на изучение дисциплин, посвященных
+            проектированию и конструированию различных мехатронных и робототехнических...</h3>
+    </article>
+</section>
+<section class="disciplines">
+    <h2 class="disciplines__title">Дисциплины</h2>
+    <ul class="disciplines__items">
+        <li class="disciplines__item">
+            <h2 class="disciplines__item-title">Алгоритмы</h2>
+            <p class="disciplines__item-description disciplines__item-description--hide">Содержание дисциплины
+                охватывает круг вопросов, связанных с
+                элементной базой систем автоматического управления и, в частности, измерительными преобразователями
+                информации. Рассматриваются вопросы, связанные с конструктивными и схемными решениями современных
+                измерительных преобразователей параметрического и генераторного типа, их основные характеристики и
+                требования, предъявляемые к ним, как элементам систем автоматики.</p>
+        </li>
+        <li class="disciplines__item">
+            <h2 class="disciplines__item-title">Мехатроника</h2>
+            <p class="disciplines__item-description disciplines__item-description--hide">Содержание дисциплины
+                охватывает круг вопросов, связанных с
+                элементной базой систем автоматического управления и, в частности, измерительными преобразователями
+                информации. Рассматриваются вопросы, связанные с конструктивными и схемными решениями современных
+                измерительных преобразователей параметрического и генераторного типа, их основные характеристики и
+                требования, предъявляемые к ним, как элементам систем автоматики.</p>
+        </li>
+        <li class="disciplines__item">
+            <h2 class="disciplines__item-title">Силовые машины</h2>
+            <p class="disciplines__item-description disciplines__item-description--hide">Содержание дисциплины
+                охватывает круг вопросов, связанных с
+                элементной базой систем автоматического управления и, в частности, измерительными преобразователями
+                информации. Рассматриваются вопросы, связанные с конструктивными и схемными решениями современных
+                измерительных преобразователей параметрического и генераторного типа, их основные характеристики и
+                требования, предъявляемые к ним, как элементам систем автоматики.</p>
+        </li>
+        <li class="disciplines__item">
+            <h2 class="disciplines__item-title">Фотоника и радиоэлектроника</h2>
+            <p class="disciplines__item-description disciplines__item-description--hide">Содержание дисциплины
+                охватывает круг вопросов, связанных с
+                элементной базой систем автоматического управления и, в частности, измерительными преобразователями
+                информации. Рассматриваются вопросы, связанные с конструктивными и схемными решениями современных
+                измерительных преобразователей параметрического и генераторного типа, их основные характеристики и
+                требования, предъявляемые к ним, как элементам систем автоматики.</p>
+        </li>
+        <li class="disciplines__item">
+            <h2 class="disciplines__item-title">Робототехника</h2>
+            <p class="disciplines__item-description disciplines__item-description--hide">Содержание дисциплины
+                охватывает круг вопросов, связанных с
+                элементной базой систем автоматического управления и, в частности, измерительными преобразователями
+                информации. Рассматриваются вопросы, связанные с конструктивными и схемными решениями современных
+                измерительных преобразователей параметрического и генераторного типа, их основные характеристики и
+                требования, предъявляемые к ним, как элементам систем автоматики.</p>
+        </li>
+    </ul>
+</section>
+<section class="map">
+    <div class="map__contacts">
+        <h2 class="map__title">Наши контакты</h2>
+        <p class="map__address">г. Санкт-Петербург, Кронверкский пр-т, д.49, ауд. 155 (вход со стороны ул. Сытнинской)
+        </p>
+        <p class="map__tel"><a href="tel:+7 (931) 538-01-70">Тел: <span>+7 (931) 538-01-70</span></a></p>
+        <!--        <a class="map__button">Написать нам</a>-->
+        <button type="button" class="button buttons-raw button-red buttons-raw--size" data-toggle="modal"
+                data-target="#modal">
+            Написать нам
+        </button>
+    </div>
+    <div id="map" class="map__content">
+        <!--            <img  class="map__image" src="./assets/img/map.png" width="2037" height="456" alt="map">-->
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer__info">
+        <a class="footer__info-logo">
+            <img class="footer__logo" src="./assets/img/logo_ITMO.svg" width="304px" height="32px">
+        </a>
+        <p class="footer__text">
+            Информация © 1993–2018 Университет ИТМО<br>
+            Разработка © 2018<br>
+            Департамент информационных технологий
+        </p>
+    </div>
+    <ul class="footer__items">
+        <li class="footer__item"><a href="#">Страница ректора</a></li>
+        <li class="footer__item"><a href="#">Институты и факультеты</a></li>
+        <li class="footer__item"><a href="#">Библиотека</a></li>
+        <li class="footer__item"><a href="#">Издания Университета</a></li>
+        <li class="footer__item"><a href="#">Приемная комиссия</a></li>
+        <li class="footer__item"><a href="#">Расписание занятий</a></li>
+    </ul>
+    <ul class="footer__items">
+        <li class="footer__item"><a href="#">Страница ректора</a></li>
+        <li class="footer__item"><a href="#">Институты и факультеты</a></li>
+        <li class="footer__item"><a href="#">Библиотека</a></li>
+        <li class="footer__item"><a href="#">Издания Университета</a></li>
+        <li class="footer__item"><a href="#">Приемная комиссия</a></li>
+        <li class="footer__item"><a href="#">Расписание занятий</a></li>
+    </ul>
+    <div class="footer__contacts">
+        <p class="footer__text">
+            г. Санкт-Петербург, Кронверкский пр., 49,<br> ауд. 333
+            <br>Тел: +7 (931) 538-01-70 <br>
+            E-mail: job@corp.ifmo.ru
+        </p>
+        <span class="social__text">Мы в соцсетях:</span>
+        <ul class="social__items">
+            <li class="social__item">
+                <img src="./assets/img/Vk.svg" width="32" height="32" alt="vk">
+            </li>
+            <li class="social__item">
+                <img src="./assets/img/Facebook.svg" width="32" height="32" alt="facebook">
+            </li>
+            <li class="social__item">
+                <img src="./assets/img/Twitter.svg" width="32" height="32" alt="twitter">
+            </li>
+            <li class="social__item">
+                <img src="./assets/img/Instagramm.svg" width="32" height="32" alt="instagramm">
+            </li>
+        </ul>
+    </div>
+    <div class="footer__rules">
+        <p class="footer__rules-first">Правила использования информации в доменной зоне ifmo.ru</p>
+        <p>Политика по обработке Персональных данных</p>
+    </div>
+
+</footer>
+
+<div class="modal" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <form class="modal__dialog modal-content">
+        <p class="modal__title">Напишите нам!</p>
+        <button type="button" class="modal__close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="form-group">
+            <label>Ваши фамилия и имя <span>*</span></label>
+            <input type="text" placeholder="Введите ваше имя" required/>
+        </div>
+        <div class="form-group">
+            <label>Электронная почта <span>*</span></label>
+            <input type="email" placeholder="primer@itmo.ru" required/>
+        </div>
+        <div class="form-group">
+            <label>Что непонятно или нужно уточнить</label>
+            <textarea placeholder="Введите ваше сообщение" maxlength="300"></textarea>
+        </div>
+        <p class="modal__lead">Отправляя данную форму, вы даете согласие на обработку своих
+            <span>Персональных данных</span></p>
+        <div class="modal__buttons">
+            <button type="submit" class="button buttons-raw button-blue submit">
+                Отправить
+            </button>
+        </div>
+    </form>
+</div>
+
+<div class="modal" id="success" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <form class="modal__dialog modal-content">
+        <p class="modal__title">Данные успешно отправлены!</p>
+        <button type="button" class="modal__close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </form>
+</div>
+
+</body>
+</html>
