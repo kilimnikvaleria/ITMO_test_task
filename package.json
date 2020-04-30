@@ -24,7 +24,7 @@
   "license": "MIT",
   "dependencies": {
     "bootstrap": "^4.4.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "popper.js": "^1.16.1",
     "ymaps": "^0.2.1"
   },
